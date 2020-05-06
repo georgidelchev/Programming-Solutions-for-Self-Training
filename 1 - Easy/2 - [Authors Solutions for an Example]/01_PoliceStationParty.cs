@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PoliceStationParty
 {
@@ -28,12 +28,12 @@ namespace PoliceStationParty
             if (moneyForTheParty >= totalSumForTheParty) // if sum is enough 
             {
                 double leftMoney = moneyForTheParty - totalSumForTheParty; // leftMoney
-                Console.WriteLine($"Let's go to the party! Money left: {leftMoney:f2}!"); // output
+                Console.WriteLine($"Let's go to the party! Money left: {leftMoney:f2}$!"); // output
             }
             else // if sum is not enough
             {
                 double neededMoney = totalSumForTheParty - moneyForTheParty; // neededMoney
-                Console.WriteLine($"You need {neededMoney:f2} for the party!"); // output
+                Console.WriteLine($"You need {neededMoney:f2}$ for the party!"); // output
             }
         }
     }
