@@ -34,7 +34,7 @@ namespace SeaPark
             if (fishInTheStorage >= totalFish) // If fish is enough.
             {
                 double leftFish = fishInTheStorage - totalFish; // Left fish calculations.
-                Console.WriteLine($"Animals will eat! Left fish: {leftFish:f2} kilos."); // Message 
+                Console.WriteLine($"These mammals will eat! Left fish: {leftFish:f2} kilos."); // Message 
             }
             else // If fish is not enough.
             {
