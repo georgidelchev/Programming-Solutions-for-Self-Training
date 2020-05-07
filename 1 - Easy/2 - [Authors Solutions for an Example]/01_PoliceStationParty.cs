@@ -6,34 +6,35 @@ namespace PoliceStationParty
     {
         static void Main(string[] args)
         {
-            int peopleCount = int.Parse(Console.ReadLine()); // input for total peopleCount
-            double cakePrice = double.Parse(Console.ReadLine()); // the price for the cake
+            int peopleCount = int.Parse(Console.ReadLine()); // Input for total people count.
+            double cakePrice = double.Parse(Console.ReadLine()); // The price for the cake.
 
-            double policemansCount = Math.Floor(peopleCount * 0.60); // policemans are 60% from everyone
-            double inspectorsCount = Math.Floor(peopleCount * 0.20); // inspectors are 20% from everyone
-            double commissarsCount = Math.Floor(peopleCount * 0.20); // commisars are 20% from everyone
+            double policemansCount = Math.Floor(peopleCount * 0.60); // Policemans are 60% from everyone.
+            double inspectorsCount = Math.Floor(peopleCount * 0.20); // Inspectors are 20% from everyone.
+            double commissarsCount = Math.Floor(peopleCount * 0.20); // Commisars are 20% from everyone.
 
-            int policemansCut = 20;  // policeman cut for the party.
-            int inspectorsCut = 15;  // inspector cut for the party.
-            int commissarsCut = 12;  // commisar cut for the party.
+            int policemansCut = 20;  // Policeman cut for the party.
+            int inspectorsCut = 15;  // Inspector cut for the party.
+            int commissarsCut = 12;  // Commisar cut for the party.
 
-            double moneyForTheParty = (policemansCount * policemansCut) + (inspectorsCount * inspectorsCut) + (commissarsCount * commissarsCut); // needed money for the party
+            double moneyForTheParty = (policemansCount * policemansCut) + (inspectorsCount * inspectorsCut) + (commissarsCount * commissarsCut); 
+            // Collected money for the party.
 
-            double beerPrice = cakePrice * 0.60; // 60% from cakePrice.
-            double decorationPrice = cakePrice * 0.20; // 20% from cakePrice.
-            double foodPrice = beerPrice * 0.50; // 50% from beerPrice.
+            double beerPrice = cakePrice * 0.60; // The price of the beer is 60% from the cake price.
+            double decorationPrice = cakePrice * 0.20; // The price of the decorations are 20% from the cake price.
+            double foodPrice = beerPrice * 0.50; // The price for the food is 50% from price of the beer.
 
-            double totalSumForTheParty = cakePrice + beerPrice + decorationPrice + foodPrice; // the sum they need
+            double totalSumForTheParty = cakePrice + beerPrice + decorationPrice + foodPrice; // The sum they need.
 
-            if (moneyForTheParty >= totalSumForTheParty) // if sum is enough 
+            if (moneyForTheParty >= totalSumForTheParty) // If sum is enough.
             {
-                double leftMoney = moneyForTheParty - totalSumForTheParty; // leftMoney
-                Console.WriteLine($"Let's go to the party! Money left: {leftMoney:f2}$!"); // output
+                double leftMoney = moneyForTheParty - totalSumForTheParty; // Calculate left money.
+                Console.WriteLine($"Let's go to the party! Money left: {leftMoney:f2}$!"); // Message with the left money.
             }
-            else // if sum is not enough
+            else // If sum is not enough.
             {
-                double neededMoney = totalSumForTheParty - moneyForTheParty; // neededMoney
-                Console.WriteLine($"You need {neededMoney:f2}$ for the party!"); // output
+                double neededMoney = totalSumForTheParty - moneyForTheParty; // Calculate needed money.
+                Console.WriteLine($"You need {neededMoney:f2}$ for the party!"); // Message with the needed money.
             }
         }
     }
