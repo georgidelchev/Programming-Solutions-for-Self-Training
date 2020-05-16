@@ -1,0 +1,1 @@
+You need to cerate pet that will be trained and will learn with commands at the end of the training session you will calculate how the pet did and how much it learned

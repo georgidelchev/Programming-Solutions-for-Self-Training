@@ -1,0 +1,5 @@
+Create console chat system
+
+	1.Need to handle multiple clients
+	2.Need to have custom protocol
+	3.Need to use sockets
