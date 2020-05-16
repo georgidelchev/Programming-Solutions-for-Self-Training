@@ -5,7 +5,7 @@ pet_IQ = 0
 
 commands_left = 10
 
-def train(command)
+def train(command):
     if commnad == "sit":
         pet_IQ = pet_IQ + 5
         pet_patiance = pet_patiance - 5
